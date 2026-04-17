@@ -8,5 +8,23 @@ languages_1 = ['Spanish', 'English', 'Russian', 'Chinese']
 index = 0
 
 for language in languages_1:
-    print(f'Index {index} and language {language}')
-    index += 2   
+    print(f'Index {index} and language {language}')# aquí asume que un language es diferente y cambia de valor para cada valor dentro de language_1 que es una lista
+    index += 2 # simplemente hace que la variable index que se definió como 0 cambie dentro de ese bucle for que va iterando elementos de langauges_1  
+country = ["peru", "bolivia", "chile","argentina", "brasil", "colombia"]
+for i in enumerate(country):
+    print(i)# lo que esta imprimiendo aquí son las tuplas, la función enumerate devuelve objetos iterables
+
+result = list(enumerate(["verano", "invierno",'otoño','primavera'],1))# al parecer usar comillas simples o normales da lo mismo
+#dentro de la función enumerate, puedo cambiar el orden del argumento del indice que por defecto viene con 0
+print(result)
+languages = ['Spanish', 'English', 'Russian', 'Chinese']
+
+for index, language in enumerate(languages, 1):
+    print(f'Index {index} and language {language}') #acá por lo que veo language tomo el valor de una tupla y es impresa, por ello el orden es vertical y no horizontal al imprimirse
+
+developers = ['Naomi', 'Dario', 'Jessica', 'Tom']
+ids = [1, 2, 3, 4]
+
+for name, id in zip(developers, ids):# esa coma desenpaqueta al zip ya este devuelve 2 tuplas el name carga los valores de developers y el id carga los valores de ids
+    print(f'Name: {name}')
+    print(f'ID: {id}')
