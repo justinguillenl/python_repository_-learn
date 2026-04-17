@@ -1,0 +1,12 @@
+languages = ['Spanish', 'English', 'Russian', 'Chinese']
+
+for language in languages:
+    print(language)
+
+languages_1 = ['Spanish', 'English', 'Russian', 'Chinese']
+
+index = 0
+
+for language in languages_1:
+    print(f'Index {index} and language {language}')
+    index += 2   
