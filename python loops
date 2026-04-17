@@ -23,8 +23,34 @@ for index, language in enumerate(languages, 1):
     print(f'Index {index} and language {language}') #acá por lo que veo language tomo el valor de una tupla y es impresa, por ello el orden es vertical y no horizontal al imprimirse
 
 developers = ['Naomi', 'Dario', 'Jessica', 'Tom']
-ids = [1, 2, 3, 4]
+ids = [1, 2, 3, 4]# el zip combina valores de las lista hasta que el menor corte esa combinación git
 
 for name, id in zip(developers, ids):# esa coma desenpaqueta al zip ya este devuelve 2 tuplas el name carga los valores de developers y el id carga los valores de ids
     print(f'Name: {name}')
     print(f'ID: {id}')
+even_numbers = []
+
+for num in range(21):
+    if num % 5 == 0 and num != 0:# al parecer se le puede concatenar a la condición del iff
+        even_numbers.append(num)
+
+print(even_numbers)
+even_numbers = [num for num in range(21) if num % 2 == 0]# añade cada num a la llista si cumple la condición que es par
+print(even_numbers)
+
+numbers_1 = range(50)
+
+result = [
+    (num, 'primo') if num > 1 and all(num % i != 0 for i in range(2, num)) # verificación que no sea divisible entre 2 u¿y numbers_1
+    else (num, 'no primo')
+    for num in numbers_1
+]
+words = ['tree', 'sky', 'mountain', 'river', 'cloud', 'sun']
+
+def is_long_word(word):# se define una nueva función is_long_word, donde word es un parametro
+    return len(word) > 3# devuelve true o false
+
+long_words = list(filter(is_long_word, words))# lista convierta en lista al iterable de filter, filter es una función que evalua cada parametro que extrae de words con la nueva función creada
+print(long_words) #se imprime la nueva lista  
+
+print(result)
