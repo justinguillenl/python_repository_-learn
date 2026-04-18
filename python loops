@@ -54,3 +54,27 @@ long_words = list(filter(is_long_word, words))# lista convierta en lista al iter
 print(long_words) #se imprime la nueva lista  
 
 print(result)
+celsius = [0, 10, 20, 30, 40]
+
+def to_fahrenheit(temp):
+    return (temp * 9/5) + 32
+
+fahrenheit = list(map(to_fahrenheit, celsius))# a diferencia de la funcipon filtro que solo toma los valores true, map() transforma toda la anterior lista a otra
+print(fahrenheit) # [32.0, 50.0, 68.0, 86.0, 104.0]
+numbers = [5, 10, 15, 20]
+total = sum(numbers, start=10) # keyword argument, osea inicia de 10 antes de que sume todo la sum() xd
+print(total) # 60
+
+students = [('Ana', 20), ('Luis', 18), ('Carlos', 22), ('Justin',22)]# la función lambda es una función de una sola linea, simple, para casos más largos usar "def" 
+# osea una función anonima que no se necesitará reusar 
+sorted_students = sorted(students, key=lambda x: x[1], reverse = True)# key= criterio de orden, lambda es como extraer el criterio, reverse es otro argumento de sorted
+numbers = [1, 2, 3, 4, 5]
+
+def square(num):# usando una función definida
+    return num ** 3 + num** 2 + num + 1
+
+squared_numbers = list(map(square, numbers))# acá el argumento de la función map parece ser square la función definida, luego la lista de numeros como datos a usar la funcion square
+print(squared_numbers) 
+
+result = (lambda x: (x**2 + 2*x - 1) if x > 0 else (x**3 - x + 4))(-2)# este ultimo (3) parece ser el argumento a ingresar a la función lambda
+print(result)
