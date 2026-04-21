@@ -12,16 +12,23 @@ def text_analyzer(text):
     longest_word = words[0]
     shortest_word =words[0]
     unique_words = []
-    for i in range(len(words)):
+    for i in range(len(words)):# tienen que coordinar int and int or str and str
         
         if len(longest_word)< len(words[i]) or len(longest_word) == len(words[i]) :
             longest_word = words[i]
-        else :
+        if len(longest_word)> len(words[i]):
             shortest_word = words[i]
 
-        if words[i] not in unique_words :
+        if words[i] not in unique_words :#pregunto si el elemento esta en la nueva lista creada, sino esta se agrega
             unique_words.append(words[i])
-        
+    return {#sintaxis correcta del diccionario que he creado
+        "words":words,
+        "word_count": word_count,
+        "longest_word": longest_word,
+        "shortest_word": shortest_word,
+        "unique_words": unique_words
+
+    }
 
     return print (words, word_count,longest_word, shortest_word, unique_words)
 text1 = 'Justin haciendo codigo codigo grandisima we'
