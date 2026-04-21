@@ -12,7 +12,7 @@ for language in languages_1:
     index += 2 # simplemente hace que la variable index que se definió como 0 cambie dentro de ese bucle for que va iterando elementos de langauges_1  
 country = ["peru", "bolivia", "chile","argentina", "brasil", "colombia"]
 for i in enumerate(country):
-    print(i)# lo que esta imprimiendo aquí son las tuplas, la función enumerate devuelve objetos iterables
+    print(i)# lo que esta imprimiendo aquí son las tuplas, la función enumerate devuelve objetos iterables, que el print este con espacios despues del for indica la identación
 
 result = list(enumerate(["verano", "invierno",'otoño','primavera'],1))# al parecer usar comillas simples o normales da lo mismo
 #dentro de la función enumerate, puedo cambiar el orden del argumento del indice que por defecto viene con 0
@@ -35,7 +35,7 @@ for num in range(21):
         even_numbers.append(num)
 
 print(even_numbers)
-even_numbers = [num for num in range(21) if num % 2 == 0]# añade cada num a la llista si cumple la condición que es par
+even_numbers = [num for num in range(21) if num % 2 == 0]# añade cada num a la llista si cumple la condición que es par, LO QUE QUIERO GUARDAR  for  VARIABLE  in  ITERABLE  if  CONDICIÓN
 print(even_numbers)
 
 numbers_1 = range(50)
@@ -48,9 +48,9 @@ result = [
 words = ['tree', 'sky', 'mountain', 'river', 'cloud', 'sun']
 
 def is_long_word(word):# se define una nueva función is_long_word, donde word es un parametro
-    return len(word) > 3# devuelve true o false
+    return len(word) > 3# devuelve true o false, esa comparación se usa como pregunta, se puede colocar pass en vez de return para definir la función despues
 
-long_words = list(filter(is_long_word, words))# lista convierta en lista al iterable de filter, filter es una función que evalua cada parametro que extrae de words con la nueva función creada
+long_words = list(filter(is_long_word, words))# list convierta en lista al iterable de filter, filter es una función que evalua cada parametro que extrae de words con la nueva función creada
 print(long_words) #se imprime la nueva lista  
 
 print(result)
@@ -67,7 +67,8 @@ print(total) # 60
 
 students = [('Ana', 20), ('Luis', 18), ('Carlos', 22), ('Justin',22)]# la función lambda es una función de una sola linea, simple, para casos más largos usar "def" 
 # osea una función anonima que no se necesitará reusar 
-sorted_students = sorted(students, key=lambda x: x[1], reverse = True)# key= criterio de orden, lambda es como extraer el criterio, reverse es otro argumento de sorted
+sorted_students = sorted(students, key=lambda x: len (x[0]), reverse = True)# key= criterio de orden, lambda es como extraer el criterio, reverse es otro argumento de sorted
+print(sorted_students)
 numbers = [1, 2, 3, 4, 5]
 
 def square(num):# usando una función definida
