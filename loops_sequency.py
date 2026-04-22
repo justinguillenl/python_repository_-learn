@@ -33,3 +33,76 @@ def text_analyzer(text):
     return print (words, word_count,longest_word, shortest_word, unique_words)
 text1 = 'Justin haciendo codigo codigo grandisima we'
 text_analyzer(text1)
+#Escribe una función columnar_cipher(text, key) que cifre un mensaje escribiendo el texto en filas de longitud key 
+#y leyendo las columnas de izquierda a derecha. Si la última fila queda incompleta, rellena con '_'.
+#También escribe columnar_decipher(ciphertext, key) que revierta el proceso.
+#Solo for loops y manejo de listas/strings
+#Sin librerías externas
+#columnar_decipher debe reconstruir la matriz por columnas y leer por filas
+def columnar_cipher(text, key):
+    list_text = list(text)# convirtiendo a este text en un iterable 
+    matriz_text = []
+    line_text = []
+    aux = 0
+    cipher_text= ''
+    if len(list_text) % key != 0 :#todo este pedazo de código añade los '_' que falten de acuerdo a key
+       res = len(list_text) % key
+       
+       for i in range(key -res):
+           list_text.append('_')
+            
+    for char in list_text:
+        
+        if aux < key:
+            line_text.append(char)
+            aux += 1
+        if len(line_text) == key and aux != 0:
+            matriz_text.append(line_text.copy())# sino usaba copy se borraba también la list_text dentro de matriz
+            line_text.clear()
+            aux = 0
+    for j in range(key):
+        for i in range(int (len(list_text) / key)):
+            cipher_text += str(matriz_text[i][j])
+    
+    return cipher_text
+
+    #return '\n'.join(str(x) for x in matriz_text)
+def columnar_decipher(ciphertext, key):
+    
+    list_text= list(ciphertext)
+    line_text = []
+    matriz_text = []
+    aux = 0
+    decipher_text = ''
+    for char in list_text:
+        
+        if aux < int (len(list_text) / key):
+            line_text.append(char)
+            aux += 1
+        if len(line_text) == int (len(list_text) / key) and aux != 0:
+            matriz_text.append(line_text.copy())# sino usaba copy se borraba también la list_text dentro de matriz
+            line_text.clear()
+            aux = 0
+    for j in range(int (len(list_text) / key)):
+        for i in range(key):
+            if matriz_text[i][j] != '_':
+                decipher_text += str(matriz_text[i][j])
+            else :
+                break
+            
+    
+    
+    
+    
+
+    return decipher_text
+
+texxt = 'Justincode'
+text_cod = str(columnar_cipher(texxt,4))
+
+print (columnar_cipher(texxt,4))
+
+print(columnar_decipher(text_cod,4))
+
+
+
