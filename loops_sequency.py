@@ -66,7 +66,7 @@ def columnar_cipher(text, key):
     
     return cipher_text
 
-    #return '\n'.join(str(x) for x in matriz_text)
+    #return '\n'.join(str(x) for x in matriz_text)# forma de imprimir dejando un \n 
 def columnar_decipher(ciphertext, key):
     
     list_text= list(ciphertext)
@@ -83,6 +83,7 @@ def columnar_decipher(ciphertext, key):
             matriz_text.append(line_text.copy())# sino usaba copy se borraba también la list_text dentro de matriz
             line_text.clear()
             aux = 0
+
     for j in range(int (len(list_text) / key)):
         for i in range(key):
             if matriz_text[i][j] != '_':
@@ -90,17 +91,13 @@ def columnar_decipher(ciphertext, key):
             else :
                 break
             
-    
-    
-    
-    
-
     return decipher_text
 
 texxt = 'Justincode'
 text_cod = str(columnar_cipher(texxt,4))
 
 print (columnar_cipher(texxt,4))
+
 
 print(columnar_decipher(text_cod,4))
 
