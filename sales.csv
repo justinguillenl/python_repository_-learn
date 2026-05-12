@@ -1,0 +1,57 @@
+fecha,producto,categoria,precio,cantidad
+2024-01-05,Laptop Pro,Electrónica,1200,3
+2024-01-12,Silla Ergonómica,Muebles,350,5
+2024-01-18,Monitor 4K,Electrónica,450,4
+2024-01-25,Teclado Mecánico,Electrónica,120,10
+2024-02-03,Escritorio,Muebles,600,2
+2024-02-10,Auriculares BT,Electrónica,90,15
+2024-02-14,Libreta Premium,Papelería,25,50
+2024-02-20,Laptop Pro,Electrónica,1200,2
+2024-02-27,Lámpara LED,Muebles,75,8
+2024-03-04,Mouse Inalámbrico,Electrónica,45,20
+2024-03-09,Silla Ergonómica,Muebles,350,3
+2024-03-15,Bolígrafo Set,Papelería,15,100
+2024-03-21,Monitor 4K,Electrónica,450,6
+2024-03-28,Archivador,Papelería,40,30
+2024-04-02,Webcam HD,Electrónica,130,12
+2024-04-08,Escritorio,Muebles,600,4
+2024-04-14,Cuaderno Pack,Papelería,20,80
+2024-04-19,Auriculares BT,Electrónica,90,18
+2024-04-25,Estantería,Muebles,280,5
+2024-05-01,Teclado Mecánico,Electrónica,120,14
+2024-05-07,Laptop Pro,Electrónica,1200,5
+2024-05-13,Marcadores Set,Papelería,18,60
+2024-05-19,Mouse Inalámbrico,Electrónica,45,25
+2024-05-26,Lámpara LED,Muebles,75,10
+2024-06-02,Monitor 4K,Electrónica,450,7
+2024-06-09,Silla Ergonómica,Muebles,350,6
+2024-06-15,Libreta Premium,Papelería,25,45
+2024-06-21,Webcam HD,Electrónica,130,9
+2024-06-28,Archivador,Papelería,40,35
+2024-07-04,Escritorio,Muebles,600,3
+2024-07-10,Auriculares BT,Electrónica,90,20
+2024-07-17,Bolígrafo Set,Papelería,15,90
+2024-07-23,Laptop Pro,Electrónica,1200,4
+2024-07-30,Estantería,Muebles,280,7
+2024-08-06,Teclado Mecánico,Electrónica,120,16
+2024-08-13,Cuaderno Pack,Papelería,20,70
+2024-08-19,Monitor 4K,Electrónica,450,5
+2024-08-26,Lámpara LED,Muebles,75,12
+2024-09-02,Mouse Inalámbrico,Electrónica,45,30
+2024-09-09,Silla Ergonómica,Muebles,350,8
+2024-09-15,Marcadores Set,Papelería,18,55
+2024-09-22,Webcam HD,Electrónica,130,11
+2024-09-29,Laptop Pro,Electrónica,1200,6
+2024-10-06,Escritorio,Muebles,600,5
+2024-10-13,Libreta Premium,Papelería,25,40
+2024-10-20,Auriculares BT,Electrónica,90,22
+2024-10-27,Archivador,Papelería,40,25
+2024-11-03,Monitor 4K,Electrónica,450,8
+2024-11-10,Estantería,Muebles,280,9
+2024-11-17,Teclado Mecánico,Electrónica,120,18
+2024-11-24,Bolígrafo Set,Papelería,15,110
+2024-12-01,Laptop Pro,Electrónica,1200,7
+2024-12-08,Silla Ergonómica,Muebles,350,10
+2024-12-15,Mouse Inalámbrico,Electrónica,45,35
+2024-12-22,Lámpara LED,Muebles,75,15
+2024-12-29,Cuaderno Pack,Papelería,20,90

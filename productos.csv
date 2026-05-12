@@ -1,0 +1,21 @@
+producto_id,nombre_producto,categoria,precio_base,proveedor
+1,Laptop Pro,Electrónica,1200,TechCorp
+2,Monitor 4K,Electrónica,450,TechCorp
+3,Teclado Mecánico,Electrónica,120,KeyMaster
+4,Mouse Inalámbrico,Electrónica,45,ClickPro
+5,Webcam HD,Electrónica,130,VisionTech
+6,Auriculares BT,Electrónica,90,SoundMax
+7,Silla Ergonómica,Muebles,350,ErgoPlus
+8,Escritorio,Muebles,600,WoodCraft
+9,Estantería,Muebles,280,WoodCraft
+10,Lámpara LED,Muebles,75,LightCo
+11,Laptop Basic,Electrónica,700,TechCorp
+12,Tablet,Electrónica,300,TechCorp
+13,Impresora,Electrónica,200,PrintPro
+14,Router WiFi,Electrónica,80,NetGear
+15,Disco Externo,Electrónica,90,StoragePro
+16,Silla Gamer,Muebles,400,ErgoPlus
+17,Mesa Auxiliar,Muebles,150,WoodCraft
+18,Libreta Premium,Papelería,25,PaperWorld
+19,Bolígrafo Set,Papelería,15,PaperWorld
+20,Archivador,Papelería,40,PaperWorld

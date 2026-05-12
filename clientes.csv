@@ -1,0 +1,26 @@
+cliente_id,nombre_cliente,tipo_cliente,ciudad
+1,Ana García,Regular,Valencia
+2,Luis Martínez,Nuevo,Sevilla
+3,María López,Nuevo,Sevilla
+4,Carlos Pérez,Regular,Madrid
+5,Sofía Ramírez,Premium,Valencia
+6,Diego Torres,Premium,Bilbao
+7,Valentina Cruz,Premium,Valencia
+8,Andrés Morales,Nuevo,Bilbao
+9,Camila Jiménez,Regular,Madrid
+10,Sebastián Ruiz,Nuevo,Barcelona
+11,Isabella Flores,Premium,Sevilla
+12,Mateo Hernández,Nuevo,Madrid
+13,Lucía Díaz,Nuevo,Sevilla
+14,Pablo Vargas,Regular,Barcelona
+15,Daniela Castro,Premium,Barcelona
+16,Tomás Mendoza,Premium,Madrid
+17,Gabriela Ortiz,Regular,Barcelona
+18,Nicolás Reyes,Regular,Bilbao
+19,Valeria Gutiérrez,Regular,Barcelona
+20,Emilio Sánchez,Regular,Sevilla
+21,Carmen Vidal,Regular,Sevilla
+22,Roberto Núñez,Premium,Sevilla
+23,Patricia Iglesias,Regular,Sevilla
+24,Fernando Castillo,Regular,Bilbao
+25,Elena Moreno,Regular,Valencia
